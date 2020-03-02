@@ -1,0 +1,915 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font: 16px Ubuntu, sans-serif;
+  }
+  
+  .heroimg {
+    position: absolute;
+    z-index: 1;
+    width: 1358px;
+  }
+  
+  .logo {
+    position: absolute;
+    z-index: 2;
+    height: 35px;
+    width: 35px;
+    margin-left: 35px;
+    margin-top: 25px;
+  }
+  
+  .mainnav {
+    z-index: 3;
+    top: 25px;
+    position: relative;
+    float: right;
+    margin-right: 35px;
+    color: #fff;
+  }
+  
+  .mainnav > ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  .mainnav > ul > li {
+    float: left;
+    text-decoration: none;
+    display: block;
+    margin-left: 100px;
+  }
+  
+  .mainnav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .card {
+    z-index: 4;
+    position: relative;
+    top: 125px;
+    background: #fff;
+    height: 450px;
+    width: 370px;
+    padding: 10px;
+    margin-left: 75px;
+    border-radius: 4px;
+  }
+  
+  .card > h1 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .card > form > ul {
+    list-style: none;
+  }
+  
+  .where {
+    padding: 12px;
+    text-align: left;
+    font-size: 10px;
+  }
+  
+  .where > div {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .checkin {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .checkin > div {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .checkin > input {
+    color: #333;
+  }
+  
+  .checkout {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .checkout > input {
+    color: #333;
+  }
+  
+  .checkout > div {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .guests {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .guests > div {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .btn {
+    float: right;
+  }
+  
+  .btn > button > input {
+    background-color: #d94a4a;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #d94a4a;
+    height: 45px;
+    width: 150px;
+  }
+  
+  .exp {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    z-index: 5;
+    font-size: 24px;
+    top: 900px;
+    margin-left: 45px;
+  }
+  
+  .options {
+    position: relative;
+    z-index: 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: 70px;
+    top: 510px;
+    margin-left: 100px;
+  }
+  
+  .options > .expoptions > a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .options > .expoptions > a > .stays {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #d8e0ed;
+    height: 100px;
+    width: 367.73px;
+  }
+  
+  .options > .expoptions > a > .stays > img {
+    height: 86.66px;
+    width: 130px;
+  }
+  
+  .options > .expoptions > a > .stays > h1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    align-self: center;
+  }
+  
+  .options > .expoptions > a > .experiences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #d8e0ed;
+    height: 100px;
+    width: 367.73px;
+  }
+  
+  .options > .expoptions > a > .experiences > img {
+    height: 86.66px;
+    width: 130px;
+  }
+  
+  .options > .expoptions > a > .experiences > h1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    align-self: center;
+  }
+  
+  .options > .expoptions > a > .adventures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #d8e0ed;
+    height: 100px;
+    width: 367.73px;
+  }
+  
+  .options > .expoptions > a > .adventures > img {
+    height: 86.66px;
+    width: 130px;
+  }
+  
+  .options > .expoptions > a > .adventures > h1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    align-self: center;
+  }
+  
+  .expoptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    justify-content: space-around;
+    grid-column-gap: 20px;
+  }
+  
+  .intro,
+  .intro2 {
+    position: absolute;
+    z-index: 6;
+    margin-left: 45px;
+  }
+  
+  .intro {
+    font-size: 24px;
+    font-weight: bold;
+    top: 1120px;
+  }
+  
+  .intro2 {
+    top: 1150px;
+    color: #333;
+  }
+  
+  .advgrid {
+    position: absolute;
+    z-index: 7;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 70px;
+    top: 1200px;
+    grid-gap: 1em;
+    margin-left: 45px;
+    justify-self: space-around;
+  }
+  
+  .advgrid > a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .advgrid > a > .adv1 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .advgrid > a > .adv1 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .advgrid > a > .adv1 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .advgrid > a > .adv2 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .advgrid > a > .adv2 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .advgrid > a > .adv2 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .advgrid > a > .adv3 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .advgrid > a > .adv3 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .advgrid > a > .adv3 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .advgrid > a > .adv4 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .advgrid > a > .adv4 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .advgrid > a > .adv4 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .advgrid > a > .adv5 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .advgrid > a > .adv5 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .advgrid > a > .adv5 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .showadv {
+    position: absolute;
+    z-index: 8;
+    color: #000;
+    top: 1620px;
+    margin-left: 45px;
+  }
+  
+  .ptostay {
+    top: 1670px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 45px;
+    font-size: 22px;
+  }
+  
+  .ptostaygrid {
+    position: absolute;
+    z-index: 8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 70px;
+    top: 1740px;
+    grid-row-gap: 15em;
+    margin-left: 45px;
+    justify-self: space-around;
+    grid-column-gap: 1em;
+  }
+  
+  .ptostaygrid > a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .ptostaygrid > a > .pto1 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto2 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto3 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto4 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto5 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto6 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto7 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto8 > img {
+    height: 222px;
+    width: 285px;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto1 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto1 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto1 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto1 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto2 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto2 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto2 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto2 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto3 > .plus {
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #7159c1;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto3 > .plus > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto3 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto3 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto4 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto4 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto4 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto4 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto5 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto5 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto5 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto5 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto6 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto6 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto6 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto6 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto7 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto7 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto7 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto7 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .ptostaygrid > a > .pto8 > .suph {
+    padding: 12px;
+    border: 1px solid #333;
+    width: 85px;
+    float: left;
+    height: 8px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .ptostaygrid > a > .pto8 > .suph > span {
+    left: -5px;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -7px;
+  }
+  
+  .ptostaygrid > a > .pto8 > .country {
+    padding: 5px;
+    width: 150px;
+    margin-left: 95px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ptostaygrid > a > .pto8 > .desc {
+    width: auto;
+    text-align: left;
+    top: 5px;
+    height: 26px;
+    margin-top: 5px;
+    justify-content: left;
+  }
+  
+  .showstay {
+    position: absolute;
+    z-index: 10;
+    color: #000;
+    top: 2390px;
+    margin-left: 45px;
+  }
+  
+  .topr,
+  .topr2 {
+    position: absolute;
+    z-index: 10;
+    margin-left: 45px;
+  }
+  
+  .topr {
+    font-size: 24px;
+    font-weight: bold;
+    top: 2480px;
+  }
+  
+  .topr2 {
+    top: 2510px;
+    color: #333;
+  }
+  
+  .expgrid {
+    position: absolute;
+    z-index: 11;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 70px;
+    top: 2580px;
+    grid-gap: 1em;
+    margin-left: 45px;
+    justify-self: space-around;
+  }
+  
+  .expgrid > a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .expgrid > a > .exp1 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .expgrid > a > .exp1 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .expgrid > a > .exp1 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp1 > .sp2 {
+    display: block;
+    top: 10px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp2 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .expgrid > a > .exp2 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .expgrid > a > .exp2 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp2 > .sp2 {
+    display: block;
+    top: 10px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp3 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .expgrid > a > .exp3 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .expgrid > a > .exp3 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp3 > .sp2 {
+    display: block;
+    top: 10px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp4 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .expgrid > a > .exp4 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .expgrid > a > .exp4 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp4 > .sp2 {
+    display: block;
+    top: 10px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp5 > img {
+    height: 300px;
+    width: 220px;
+    border-radius: 4px;
+  }
+  
+  .expgrid > a > .exp5 > h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .expgrid > a > .exp5 > span {
+    padding: 5px;
+    color: #333;
+  }
+  
+  .expgrid > a > .exp5 > .sp2 {
+    display: block;
+    top: 10px;
+    color: #333;
+  }
+  
+  .showexp {
+    position: absolute;
+    z-index: 12;
+    color: #000;
+    top: 3010px;
+    margin-left: 45px;
+  }
+  
+  footer {
+    background: blue;
+    position: absolute;
+    top: 3050px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+  }
+  
